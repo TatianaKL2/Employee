@@ -1,4 +1,4 @@
-public class Ceo extends Manager{
+public class Ceo extends Manager implements EmployeeVacation{
     private boolean hasCompanyCar;
 
     public Ceo() {
@@ -30,5 +30,10 @@ public class Ceo extends Manager{
     }
     void goToDayOff(){
         System.out.println("Я " + getFio() + ". Мне нужен отгул, так как " + getDayOff());
+    }
+
+    @Override
+    public void goToVacation() {
+        System.out.println("Я " + getFio() + ", CEO и я еду на Гавайи!");
     }
 }

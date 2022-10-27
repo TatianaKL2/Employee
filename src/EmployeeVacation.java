@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface EmployeeVacation {
+public interface EmployeeVacation {
+    public void goToVacation();
 }

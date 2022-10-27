@@ -54,4 +54,5 @@ public abstract class Employee {
         System.out.println("Меня зовут " + getFio() + ". Мне " + getAge() + " (года/лет)");
     }
     abstract void goToDayOff();
+
 }

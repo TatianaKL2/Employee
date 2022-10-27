@@ -1,4 +1,4 @@
-public class Manager extends Employee {
+public class Manager extends Employee implements EmployeeVacation {
     private boolean hasStocks;
 
     public Manager() {
@@ -32,5 +32,10 @@ public class Manager extends Employee {
     @Override
     void goToDayOff() {
         System.out.println("Я " + getFio() + ", менеджер. Мне нужен отгул, так как я " + getDayOff());
+    }
+
+    @Override
+    public void goToVacation() {
+        System.out.println("Я " + getFio() + ", менеджер. Еду на дачу");
     }
 }

@@ -1,4 +1,4 @@
-public class Developer extends Employee {
+public class Developer extends Employee implements EmployeeVacation{
     private String grades;
 
     public Developer() {
@@ -33,5 +33,10 @@ public class Developer extends Employee {
     @Override
     void goToDayOff() {
         System.out.println("Я " + getFio() + ", " + getGrades() + " разработчик. Мне нужен отгул, так как я " + getDayOff());
+    }
+
+    @Override
+    public void goToVacation() {
+        System.out.println("Я " + getFio() + ", " + getGrades() + " разработчик. Я еду на буткемп!");
     }
 }

@@ -53,19 +53,37 @@ public class Main {
 //            e.meeting();
 //        }
 //        System.out.println(ceo);
-        one.goToDayOff();
-        two.goToDayOff();
-        three.goToDayOff();
+//        one.goToDayOff();
+//        two.goToDayOff();
+//        three.goToDayOff();
+//
+//        oone.goToDayOff();
+//        ttwo.goToDayOff();
+//        tthree.goToDayOff();
+//        four.goToDayOff();
+//
+//        mng.goToDayOff();
+//        mng1.goToDayOff();
+//
+//        ceo.goToDayOff();
+        System.out.println("*В честь дня рождения компании*\n");
+        Specialist[] specialists = {one, two, three};
+        for (Specialist s : specialists){
+            s.goToVacation();
+        }
+        System.out.println();
+        Developer[] developers = {oone, ttwo, tthree, four};
+        for (Developer d : developers){
+            d.goToVacation();
+        }
+        System.out.println();
+        Manager[] managers = {mng, mng1};
+        for (Manager m : managers){
+            m.goToVacation();
+        }
+        System.out.println();
+        ceo.goToVacation();
 
-        oone.goToDayOff();
-        ttwo.goToDayOff();
-        tthree.goToDayOff();
-        four.goToDayOff();
-
-        mng.goToDayOff();
-        mng1.goToDayOff();
-
-        ceo.goToDayOff();
 
     }
 }

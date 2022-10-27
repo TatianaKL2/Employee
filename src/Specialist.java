@@ -1,4 +1,4 @@
-public class Specialist extends Employee {
+public class Specialist extends Employee implements EmployeeVacation {
     private int levels;
 
     public Specialist(){;
@@ -32,5 +32,10 @@ public class Specialist extends Employee {
     @Override
     void goToDayOff() {
         System.out.println("Я " + getFio() + ", специалист " + getLevels() + " уровня. Мне нужен отгул, так как я " + getDayOff());
+    }
+
+    @Override
+    public void goToVacation() {
+        System.out.println("Я " + getFio() + ", специалист " + getLevels() + " уровня. Еду на Иссык-Куль.");
     }
 }
